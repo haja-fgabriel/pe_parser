@@ -269,7 +269,8 @@ int AnalyzeExportDirectory(PIMAGE_DOS_HEADER DosHeader, PIMAGE_EXPORT_DIRECTORY 
 
 	for (DWORD i = 0; i < numberOfFunctions; i++)
 	{
-		DWORD ordinal = ExportDirectory->Base + i;
+		//DWORD ordinal = ExportDirectory->Base + i;
+		DWORD ordinal =  i;
 		fileAddress = (DWORD)
 			((PBYTE)DosHeader + RvaToFa(DosHeader, funcArray[ordinal]));
 		
