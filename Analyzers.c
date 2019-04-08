@@ -131,7 +131,7 @@ int AnalyzeImportDescriptor(PIMAGE_DOS_HEADER DosHeader, PIMAGE_IMPORT_DESCRIPTO
 	printf("Imports:\n");
 	if (ImportDescriptor == NULL)
 	{
-		printf("Unexpected error: invalid ImportDescriptor\n");
+		//printf("Unexpected error: invalid ImportDescriptor\n");
 		return 0;
 	}
 	
@@ -236,7 +236,7 @@ int AnalyzeExportDirectory(PIMAGE_DOS_HEADER DosHeader, PIMAGE_EXPORT_DIRECTORY 
 	printf("Exports:\n");
 	if (ExportDirectory == NULL)
 	{
-		printf("Unexpected error: invalid ExportDirectory\n");
+		//printf("Unexpected error: invalid ExportDirectory\n");
 		return 0;
 	}
 	if (!STRUCT_FITS_IN_FILE(ExportDirectory))
