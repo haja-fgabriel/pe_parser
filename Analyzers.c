@@ -293,7 +293,7 @@ int AnalyzeExportDirectory(PIMAGE_DOS_HEADER DosHeader, PIMAGE_EXPORT_DIRECTORY 
 			nameAddress = (PBYTE) emptyString;
 		}
 
-		printf("%s,%08hX,%s\n", nameAddress, nameOrdinal, fileAddressString);
+		printf("%s,%04hX,%s\n", nameAddress, nameOrdinal, fileAddressString);
 	}
 
 	return 0;
