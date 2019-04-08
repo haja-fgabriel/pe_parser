@@ -175,8 +175,6 @@ ULONGLONG GetOrdinal64(PIMAGE_THUNK_DATA64 ThunkData)
 	return 0;
 }
 
-#include <stdio.h>
-
 PBYTE GetExportedFuncName(PIMAGE_DOS_HEADER DosHeader, PIMAGE_EXPORT_DIRECTORY ExportDirectory, DWORD FuncRva, PWORD NameOrdinal)
 {
 	DWORD fileAddress = RvaToFa(DosHeader, ExportDirectory->AddressOfFunctions);
